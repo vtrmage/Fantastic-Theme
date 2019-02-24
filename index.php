@@ -7,5 +7,10 @@
         the_post();
      }
  }
+?>
+
+<h2 class="juno">VEM PRO PA PAAAAI MAN</h2>
+
+ <?php
  get_footer();
 ?>
