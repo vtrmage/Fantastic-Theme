@@ -16,5 +16,5 @@
 
 
  <?php
- get_footer();
+ get_template_part('inc/footer/main_footer')
 ?>
