@@ -1,0 +1,162 @@
+
+//REAL DEAL LISTICLES
+
+.ibm_listicles{
+  width: 100%;
+  text-align: center;
+}
+
+
+#listicle_top{
+  top:380px;
+  position:absolute;
+}
+
+#nextPost {display:none}
+#prevPost {display:none;cursor:not-allowed;}
+#prevPostArrow {display:none;cursor:not-allowed;}
+#nextPostArrow  {display:none}
+
+.listicles_container{
+  padding-top: 20px;
+  .listicles_nav{
+      header{
+        font-size: 15px;
+        display: inline;
+        text-transform: uppercase;
+        color: #233b4d;
+        font-weight: 500;
+      }
+      div:last-child{
+        text-align: end;
+      }
+      .listicles_button{
+        border:none;
+        background: none;
+        cursor:pointer;
+      }
+  }
+
+  .listicles_slideBox{
+    min-height: 200px;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 400;
+    color: #323232;
+    transition: 1s;
+  }
+//slide Animation
+  .move_right{
+    width: 100%;
+    position: relative;
+    margin: 28px 0 40px;
+    -webkit-animation-name: Sliding;
+    -webkit-animation-duration: 1s;
+    animation-name: Sliding;
+    animation-duration: .8s;
+      h1,h2,h3,h4,h5{
+       font-size: 26px;
+       line-height: 120%;
+       font-weight: 600;
+       margin: 30px 0 15px;
+       color: #4178BE;
+      }
+    }
+
+    @keyframes Sliding {
+      from {
+        left: 500px;
+        opacity: 0;
+        margin-bottom: 0;
+      }
+      to {
+        left: 0px;
+        opacity:1;
+        margin-bottom: 40px;
+      }
+    }
+
+    .move_left{
+      width: 100%;
+      position: relative;
+      margin: 28px 0 40px;
+      -webkit-animation-name: Sliding-left;
+      -webkit-animation-duration: 1s;
+      animation-name: Sliding-left;
+      animation-duration: .8s;
+        h1,h2,h3,h4,h5{
+         font-size: 26px;
+         line-height: 120%;
+         font-weight: 600;
+         margin: 30px 0 15px;
+         color: #4178BE;
+        }
+      }
+
+      @keyframes Sliding-left {
+        from {
+          left: -500px;
+          opacity: 0;
+          margin-bottom: 0;
+        }
+        to {
+          left: 0px;
+          opacity:1;
+          margin-bottom: 40px;
+        }
+      }
+// Animation END
+  .listicles_bottom_nav{
+   text-align: center;
+      .listicles_number_box{
+        font-size: 14px;
+        line-height: 2.5;
+        font-weight: 600;
+        color: #32495a;
+      }
+       .listicles_button{
+          cursor: pointer;
+          border: none;
+          background: #1c364a;
+          color: white;
+          width: 100%;
+          height: 40px;
+          transition: 0.9s;
+          &:hover{
+            background: #5689c7;
+          }
+          &:active{
+            -webkit-transform: scale(0.93, 0.93);
+            transform: scale(0.93, 0.93);
+          }
+       }
+
+       .listicles_disabled_button{
+          cursor: pointer;
+          border: none;
+          background: #d4d4d4;
+          color: white;
+          width: 100%;
+          height: 40px;
+       }
+       .listicles_nextPost_button{
+         cursor: pointer;
+         color: white;
+         div {
+            margin: 0;
+            background: #1f3e54;
+            height: 40px;
+            line-height: 37px;
+            font-weight: 700;
+            transition: 0.9s;
+            &:hover{
+              background: #5689c7;
+            }
+            &:active{
+              -webkit-transform: scale(0.93, 0.93);
+              transform: scale(0.93, 0.93);
+            }
+         }
+       }
+  }
+}

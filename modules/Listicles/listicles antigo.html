@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<title>LISTICLES</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+  #nextPost {display:none}
+  #prevPost {display:none}
+  #prevPostArrow {display:none}
+  #nextPostArrow  {display:none}
+</style>
+<body>
+
+<div class="w3-container">
+
+  <h2 >Slide <span class="list_number"></span> of <span class="divs"></span></h2>
+  <button class="w3-button" id="prevPostArrow" onclick="plusDivs(-1)" disabled>❮ </button>
+  <button class="w3-button" id="prevArrow" onclick="plusDivs(-1)">❮ </button>
+  <button class="w3-button" id="nextArrow" onclick="plusDivs(1)"> ❯</button>
+  <button class="w3-button" id="nextPostArrow" onclick="plusDivs(1)" disabled> ❯</button>
+
+
+</div>
+
+<div class="w3-content" style="max-width:800px">
+  <p class="slide" style="width:100%">MENINO 1asdfasdfa</p>
+  <p class="slide" style="width:100%">MENINO 2asdfasdfasd</p>
+  <p class="slide" style="width:100%">MENINO 3asdfasdf</p>
+  <p class="slide" style="width:100%">MENINO 4asdfasdf</p>
+  <p class="slide" style="width:100%">MENINO 5asdfasdf</p>
+</div>
+
+
+<div class="w3-center">
+  <div class="w3-section">
+    <button class="w3-button w3-light-grey" id="prevPost" onclick="" disabled >❮ none</button>
+    <button class="w3-button w3-light-grey" id="prev" onclick="plusDivs(-1)">❮ Prev</button>
+    <button class="w3-button w3-light-grey" id="next" onclick="plusDivs(1)">Next ❯</button>
+    <button class="w3-button w3-light-grey" id="nextPost" onclick="">Next Post ❯</button>
+  </div>
+   <span class="list_number"></span>/<span class="divs"></span>
+</div>
+<h2>A fila esta aqui em baixo</h2>
+<h3 id="fila"></h3>
+
+<script>
+
+// THIS IS MY COUNTER  tO KNOW HOW MANY ELEMENTS I HAVE
+
+  var s = document.getElementsByClassName("slide");
+  var quantidade_de_slides = s.length;
+  var i;
+
+//Loop to get all "divs" classes
+  for (i=0; i < 2 ; i++){ document.getElementsByClassName("divs")[i].innerHTML = quantidade_de_slides;}
+
+// THIS IS THE LOOP WHICH CREATES THE MENU BUTTONS
+  var numeros_da_fila  = quantidade_de_slides;
+  var texto = "";
+  for (i=1; i <= numeros_da_fila ; i++){
+     texto += '<button class="w3-button demo" onclick="currentDiv('+ i +')">'+  i  +'</button>';
+     document.getElementById("fila").innerHTML = texto;
+  }
+
+// setting a default value to the first slide
+  var slideIndex = 1;
+  showDivs(slideIndex);
+
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+
+  function currentDiv(n) {
+    showDivs(slideIndex = n);
+  }
+
+// function responsible for showing the selected div
+  function showDivs(n) {
+    var numero_do_slide = document.getElementsByClassName("slide");
+    var botoes = document.getElementsByClassName("demo");
+
+
+// the following IFS were created to prevent all buttons showing at the same time
+    if (n >= numero_do_slide.length) {
+      document.getElementById("nextArrow").style.display = "none";
+      document.getElementById("next").style.display = "none";
+      document.getElementById("nextPost").style.display = "inline";
+      document.getElementById("nextPostArrow").style.display = "inline";
+    }
+
+    else if (n <= 1) {
+      document.getElementById("prevArrow").style.display = "none";
+      document.getElementById("prev").style.display = "none";
+      document.getElementById("prevPost").style.display = "inline";
+      document.getElementById("prevPostArrow").style.display = "inline";
+    }
+
+   else {
+     document.getElementById("nextArrow").style.display = "inline";
+     document.getElementById("prevArrow").style.display = "inline";
+     document.getElementById("next").style.display = "inline";
+     document.getElementById("prev").style.display = "inline";
+     document.getElementById("nextPost").style.display = "none";
+     document.getElementById("prevPost").style.display = "none";
+     document.getElementById("nextPostArrow").style.display = "none";
+     document.getElementById("prevPostArrow").style.display = "none";
+   }
+
+//Loop responsible for hidding non selected divs
+    for (i = 0; i < numero_do_slide.length; i++) {
+      numero_do_slide[i].style.display = "none";
+    }
+
+//Loop which removes the selected "red color" from its buttons
+   for (i = 0; i < botoes.length; i++) {
+      botoes[i].className = botoes[i].className.replace(" w3-red", "");
+    }
+//loop which gets all list_number class elements
+  for (i=0; i < 2 ; i++){ document.getElementsByClassName("list_number")[i].innerHTML = botoes[slideIndex-1].innerHTML;}
+
+//it Shows the selected slide
+  numero_do_slide[slideIndex-1].style.display = "block";
+
+//it reds the selected button
+  botoes[slideIndex-1].className += " w3-red";
+
+  }
+
+</script>
+</body>
+</html>

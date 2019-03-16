@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<title>LISTICLES</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+</head>
+
+<body>
+  <span id="listicle_top"></span>
+  <div class="listicles_container plex">
+    <div class="row">
+      <nav class="listicles_nav">
+        <div class="col-lg-10 col-md-9 col-sm-10 col-xs-9">
+          <header >Slideshow</header>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-2 col-xs-3">
+          <button class="listicles_button" id="prevPostArrow" onclick="" disabled>❮ </button>
+          <button class="listicles_button" id="prevArrow" onclick="minusDivs(-1)">❮ </button>
+          <button class="listicles_button" id="nextArrow" onclick="plusDivs(1)"> ❯</button>
+          <button class="listicles_button" id="nextPostArrow" onclick="plusDivs(1)" disabled> ❯</button>
+        </div>
+
+      </nav>
+    </div>
+      <div class="listicles_slideBox">
+          <div class="move_right" id="listicle_slide"><h3>Listicle Title</h3>Pellentesque eu arcu quis libero faucibus lobortis ac eu orci. Nullam pretium tortor at libero vehicula tincidunt. Ut nec velit at diam cursus accumsan ut eget nisi. Nullam eleifend nisi vel dolor faucibus, nec vestibulum mi auctor. Maecenas nunc diam, sodales eu mollis ut, ullamcorper eu dolor. Integer laoreet lectus ac sagittis euismod. Nam aliquam nisl vel velit commodo finibus. Pellentesque habitant morbi tristique   senectus et netus et malesuada fames ac turpis egestas. Proin et tincidunt augue.Vivamus semper egestas elit, quis ornare justo aliquam non. Proin accumsan tempor diam, vel sagittis turpis. Nulla sit amet nulla ut elit dapibus sodales tincidunt sed dolor. Nulla facilisi. Phasellus vitae ante quis neque aliquet rutrum quis vitae odio. Nunc sagittis ultricies felis, ac porta quam venenatis at. Sed ut nunc vel massa porta bibendum vulputate non nulla.
+          </div>
+          <div class="move_right" id="listicle_slide"><h3>Listicle Title</h3>Pellentesque eu arcu quis libero faucibus lobortis ac eu orci. Nullam pretium tortor at libero vehicula tincidunt. Ut nec velit at diam cursus accumsan ut eget nisi. Nullam eleifend nisi vel dolor faucibus, nec vestibulum mi auctor. Maecenas nunc diam, sodales eu mollis ut, ullamcorper eu dolor. Integer laoreet lectus ac sagittis euismod. Nam aliquam nisl vel velit commodo finibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin et tincidunt augue.Vivamus semper egestas elit, quis ornare justo aliquam non. Proin accumsan tempor diam, vel sagittis turpis. Nulla sit amet nulla ut elit dapibus sodales tincidunt sed dolor. Nulla facilisi. Phasellus vitae ante quis neque aliquet rutrum quis vitae odio. Nunc sagittis ultricies felis, ac porta quam venenatis at. Sed ut nunc vel massa porta bibendum vulputate non nulla.
+          </div>
+          <div class="move_right" id="listicle_slide"><h3>Listicle Title</h3>Pellentesque eu arcu quis libero faucibus lobortis ac eu orci. Nullam pretium tortor at libero vehicula tincidunt. Ut nec velit at diam cursus accumsan ut eget nisi. Nullam eleifend nisi vel dolor faucibus, nec vestibulum mi auctor. Maecenas nunc diam, sodales eu mollis ut, ullamcorper eu dolor. Integer laoreet lectus ac sagittis euismod. Nam aliquam nisl vel velit commodo finibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin et tincidunt augue.Vivamus semper egestas elit, quis ornare justo aliquam non. Proin accumsan tempor diam, vel sagittis turpis. Nulla sit amet nulla ut elit dapibus sodales tincidunt sed dolor. Nulla facilisi. Phasellus vitae ante quis neque aliquet rutrum quis vitae odio. Nunc sagittis ultricies felis, ac porta quam venenatis at. Sed ut nunc vel massa porta bibendum vulputate non nulla.
+          </div>
+          <div class="move_right" id="listicle_slide"><h3>Listicle Title</h3>Pellentesque eu arcu quis libero faucibus lobortis ac eu orci. Nullam pretium tortor at libero vehicula tincidunt. Ut nec velit at diam cursus accumsan ut eget nisi. Nullam eleifend nisi vel dolor faucibus, nec vestibulum mi auctor. Maecenas nunc diam, sodales eu mollis ut, ullamcorper eu dolor. Integer laoreet lectus ac sagittis euismod. Nam aliquam nisl vel velit commodo finibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin et tincidunt augue.Vivamus semper egestas elit, quis ornare justo aliquam non. Proin accumsan tempor diam, vel sagittis turpis. Nulla sit amet nulla ut elit dapibus sodales tincidunt sed dolor. Nulla facilisi. Phasellus vitae ante quis neque aliquet rutrum quis vitae odio. Nunc sagittis ultricies felis, ac porta quam venenatis at. Sed ut nunc vel massa porta bibendum vulputate non nulla.
+          </div>
+          <div class="move_right" id="listicle_slide"><h3>Listicle Title</h3>Pellentesque eu arcu quis libero faucibus lobortis ac eu orci. Nullam pretium tortor at libero vehicula tincidunt. Ut nec velit at diam cursus accumsan ut eget nisi. Nullam eleifend nisi vel dolor faucibus, nec vestibulum mi auctor. Maecenas nunc diam, sodales eu mollis ut, ullamcorper eu dolor. Integer laoreet lectus ac sagittis euismod. Nam aliquam nisl vel velit commodo finibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin et tincidunt augue.Vivamus semper egestas elit, quis ornare justo aliquam non. Proin accumsan tempor diam, vel sagittis turpis. Nulla sit amet nulla ut elit dapibus sodales tincidunt sed dolor. Nulla facilisi. Phasellus vitae ante quis neque aliquet rutrum quis vitae odio. Nunc sagittis ultricies felis, ac porta quam venenatis at. Sed ut nunc vel massa porta bibendum vulputate non nulla.</div>
+      </div>
+      <nav class="listicles_bottom_nav row">
+         <div class="single col-lg-5 col-md-5 col-sm-5 col-xs-5">
+            <button class="listicles_disabled_button" id="prevPost" onclick="" disabled >❮</button>
+            <button class="listicles_button" id="prev" onclick="minusDivs(-1);window.location.href='#listicle_top'">❮</button>
+          </div>
+          <div class="single col-lg-2 col-md-2 col-sm-2 col-xs-2 listicles_number_box">
+            <span class="list_number"></span>/<span class="list_total"></span>
+          </div>
+          <div class="single col-lg-5 col-md-5 col-sm-5 col-xs-5">
+            <button class="listicles_button" id="next" onclick="plusDivs(1);window.location.href='#listicle_top'">❯</button>
+            <a class="listicles_nextPost_button" id="nextPost" href="<?php echo $next_post_url ?>"><div>Next Story</div></a>
+          </div>
+      </nav>
+</div>
+<script>
+
+
+// THIS IS MY COUNTER  which KNOWS HOW MANY ELEMENTS I HAVE
+
+  var content = document.querySelectorAll("#listicle_slide");
+  var number_of_listicle_slides = content.length;
+  var i;
+
+//Loop to get all "list_total" classes
+  for (i=0; i < 1 ; i++){ document.getElementsByClassName("list_total")[i].innerHTML = number_of_listicle_slides;}
+
+// setting a default value to the first listicle_slide
+  var listicle_slideIndex = 1;
+  showDivs(listicle_slideIndex);
+
+
+  function plusDivs(n) {
+    for (i=0; i < number_of_listicle_slides ; i++){
+     content[i].className = "move_right";
+    }
+    showDivs(listicle_slideIndex += n);
+  }
+
+
+  function minusDivs(n){
+    for (i=0; i < number_of_listicle_slides ; i++){
+     content[i].className = "move_left";
+    }
+    showDivs(listicle_slideIndex += n);
+  }
+
+  function currentDiv(n){
+    showDivs(listicle_slideIndex = n);
+  }
+
+// function responsible for showing the selected div
+  function showDivs(n) {
+    var current_slide_number = document.querySelectorAll("#listicle_slide");
+
+// the following IFS were created to prevent all buttons showing at the same time
+    if (n >= current_slide_number.length) {
+      document.getElementById("nextArrow").style.display = "none";
+      document.getElementById("next").style.display = "none";
+      document.getElementById("nextPost").style.display = "inline";
+      document.getElementById("nextPostArrow").style.display = "inline";
+    }
+
+    else if (n <= 1) {
+      document.getElementById("prevArrow").style.display = "none";
+      document.getElementById("prev").style.display = "none";
+      document.getElementById("prevPost").style.display = "inline";
+      document.getElementById("prevPostArrow").style.display = "inline";
+    }
+
+   else {
+     document.getElementById("nextArrow").style.display = "inline";
+     document.getElementById("prevArrow").style.display = "inline";
+     document.getElementById("next").style.display = "inline";
+     document.getElementById("prev").style.display = "inline";
+     document.getElementById("nextPost").style.display = "none";
+     document.getElementById("prevPost").style.display = "none";
+     document.getElementById("nextPostArrow").style.display = "none";
+     document.getElementById("prevPostArrow").style.display = "none";
+   }
+
+//Loop responsible for hidding non selected divs
+    for (i = 0; i < current_slide_number.length; i++) {
+      current_slide_number[i].style.display = "none";
+    }
+
+//loop which gets all list_number class elements
+    for (i=0; i < 1 ; i++){ document.getElementsByClassName("list_number")[i].innerHTML = listicle_slideIndex;}
+
+//it Shows the selected listicle_slide
+    current_slide_number[listicle_slideIndex-1].style.display = "block";
+  }
+
+</script>
+</body>
+</html>
