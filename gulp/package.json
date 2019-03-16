@@ -3,13 +3,13 @@
   "version": "1.0.0",
   "description": "our new fantastically awasemo Jason file, this is just a description btw mannn",
   "main": "gulpfile.js",
-  "dependencies": {
-    "gulp": "^4.0.0"
-  },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Vitao",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "gulp-uglify": "^3.0.2",
+    "gulp": "^3.9.1"
+  }
 }
