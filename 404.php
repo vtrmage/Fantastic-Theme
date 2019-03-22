@@ -1,9 +1,1 @@
-<?php
-get_header();
-?>
-
-<h1> AN Kaidow Error Man</h1>
-
-<?php
-get_footer();
- ?>
+<?php get_template_part('app/post_types/pages/404_error'); ?>
