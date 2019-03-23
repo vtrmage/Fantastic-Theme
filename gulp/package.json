@@ -4,9 +4,16 @@
   "description": "our new fantastically awasemo Jason file, this is just a description btw mannn",
   "main": "gulpfile.js",
   "dependencies": {
-    "gulp": "^4.0.0"
+    "gulp": "^4.0.0",
+    "gulp-livereload": "^4.0.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp-rename": "^1.4.0",
+    "gulp-ruby-sass": "^4.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
