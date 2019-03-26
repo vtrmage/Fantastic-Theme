@@ -45,13 +45,13 @@ $connection = mysqli_connect('localhost','root','root','sistema_pagamento');
 
 <form action="<?php get_theme_file_uri('app/templates/sist_pagamento/login.php')?>" method="post">
   <div class="form-group">
-    <label for="username">Email address</label>
-    <input type="text" class="form-control" name="username" id="username" aria-describedby="emailHelp" placeholder="Enter usernaem">
+    <label for="username">Login</label>
+    <input type="text" class="form-control" name="username" id="username" aria-describedby="emailHelp" placeholder="Enter username">
     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
   </div>
   <div class="form-group">
     <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password">
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Password" name="password">
   </div>
   <button type="submit" class="btn btn-warning" name="submit" value="Submit">Submit</button>
 </form>
