@@ -1,1 +1,1 @@
-<?php get_template_part('app/post_types/pages/404_error'); ?>
+<?php get_template_part('app/templates/pages/404_error'); ?>

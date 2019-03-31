@@ -1,0 +1,32 @@
+@mixin block($background){
+  color:white;
+  height: 350px;
+  width: 50%;
+  background: $background;
+  font-size: 20px;
+  position: relative;
+  text-align: center;
+  span{
+      position: relative;
+      top:50%;
+      transform: translateY(-50%);
+  }
+
+}
+
+.block-wrapper{
+  padding-top: 50px;
+}
+
+.userBlock{
+  @include block(blue);
+}
+.paymentBlock{
+  @include block(tomato);
+}
+.checkUserBlock{
+  @include block(purple);
+}
+.checkPaymentBlock{
+  @include block(magenta);
+}

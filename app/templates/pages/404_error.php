@@ -1,9 +1,14 @@
-<?php
-get_header();
-?>
+<?php get_header(); ?>
 
-<h1> AN Kaidow Error Man</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-6"><h2>404 KAIDOW</h2></div>
 
+    <div class="col-6"><h3>Pagina nao encontradaaaaa</h3></div>
+  </div>
+</div>
+
+</div>
 <?php
 get_footer();
  ?>
