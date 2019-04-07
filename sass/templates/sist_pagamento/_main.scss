@@ -1,17 +1,30 @@
-@mixin block($background){
+@mixin block($background, $marginT,$marginR,$marginB,$marginL){
   color:white;
   height: 350px;
-  width: 50%;
+  width: 100%;
   background: $background;
   font-size: 20px;
-  position: relative;
   text-align: center;
-  span{
-      position: relative;
-      top:50%;
-      transform: translateY(-50%);
-  }
+  display: table;
+  transition: .5s;
+  cursor: pointer;
 
+  &:hover{
+    margin: $marginT $marginR $marginB $marginL;
+    height: 350px * .9;
+    width: 100% * .9;
+
+  //  $background:lighten($background, 10%);
+    background:  complement($background);
+  }
+  a{
+    color: floralwhite;
+    display: table-cell;
+    vertical-align: middle;
+    &:hover{
+
+    }
+  }
 }
 
 .block-wrapper{
@@ -19,14 +32,14 @@
 }
 
 .userBlock{
-  @include block(blue);
+  @include block(darkblue,0,20px,40px,0);
 }
 .paymentBlock{
-  @include block(tomato);
+  @include block(tomato,0,0px,40px,40px);
 }
 .checkUserBlock{
-  @include block(purple);
+  @include block(turquoise,40px,40px,0,0);
 }
 .checkPaymentBlock{
-  @include block(magenta);
+  @include block(purple,40px,0,0,40px);
 }

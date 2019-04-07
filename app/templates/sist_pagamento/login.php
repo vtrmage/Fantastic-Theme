@@ -1,13 +1,10 @@
 <?php
 
-get_header();
-get_template_part('app/templates/sist_pagamento/queries');
-
 //estou pegando o permalink pq ai eu posso mudar o slug da pagina quando eu quiser,e nao terei problemas, uma vez que o permalink vem do banco!
 $endereco_pagina_home = get_permalink(15);
 ?>
 
-<div class="container">
+
 <h1>Tela de login</h1>
 
 <form action="<?php get_theme_file_uri('app/templates/sist_pagamento/home.php')?>" method="post">
@@ -23,7 +20,3 @@ $endereco_pagina_home = get_permalink(15);
   <button type="submit" class="btn btn-warning" name="submit" value="Submit">Submit</button>
   <button class="btn btn-link"><a href="<?php echo $endereco_pagina_home; ?>">vai para home</a></button>
 </form>
-
-</div>
-
-<?php get_footer(); ?>
