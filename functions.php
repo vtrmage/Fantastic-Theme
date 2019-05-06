@@ -23,4 +23,45 @@ add_action('init', 'navbar');
 
 
 add_filter('use_block_editor_for_post', '__return_false');
+
+function pagamento_post_type(){
+  register_post_type('pagamento', array(
+    'public' => true,
+    'labels'=> array(
+      'name' => 'Pagamentos',
+      'add_new_item' => 'Insira o nome do projeto',
+      'edit_item'=>'Editar o nome do Projeto'
+    ),
+    'menu_position' => 2,
+    'menu_icon' => 'dashicons-tickets-alt',
+  ));
+}
+
+function cliente_post_type(){
+  register_post_type('cliente', array(
+    'public' =>true,
+    'labels'=> array(
+      'name' => 'Clientes',
+      'add_new_item' => 'Criar novo Cliente Man'
+    ),
+    'menu_icon' => 'dashicons-universal-access-alt',
+    'menu_position' => 2,
+  ));
+}
+
+function projeto_post_type(){
+  register_post_type('Projeto', array(
+    'public' =>true,
+    'labels'=> array(
+      'name' => 'Projeto',
+      'add_new_item' => 'Nome do novo projeto'
+    ),
+    'menu_icon' => 'dashicons-clipboard',
+    'menu_position' => 4,
+  ));
+}
+
+add_action('init','cliente_post_type');
+add_action('init','projeto_post_type');
+add_action('init','pagamento_post_type');
  ?>
