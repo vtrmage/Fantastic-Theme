@@ -2,16 +2,19 @@
 <?php
  get_header();
 
- if (have_posts()){
-     while(have_posts()){
-        the_post();
-     }
- }
+$args= array(
+  'post_type'      => 'post',
+  'orderby'        => 'DESC',
+  'posts_per_page' => 7,
+);
+$figura = new WP_Query($args);
+
+
 ?>
 
 
 
-
+<h1>margerita</h1>
 
 
  <?php

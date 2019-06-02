@@ -64,4 +64,24 @@ function projeto_post_type(){
 add_action('init','cliente_post_type');
 add_action('init','projeto_post_type');
 add_action('init','pagamento_post_type');
+
+// function create_external() {
+// register_post_type( 'ibm_externals',
+//     array(
+//             'labels' => array(
+//                 'name' => __( 'Externals' ),
+//                 'singular_name' => __( 'External' ),
+//                 'add_new_item' => 'Nome post Externo'
+//             ),
+//             'public' => true,
+//             'has_archive' => false,
+//             'rewrite' => array('slug' => 'articles'),
+//             'menu_position' => 6,
+//             'supports' => array('title','editor','author','thumbnail', 'excerpt', 'trackbacks', 'custom-fields', 'comments', 'revisions', 'page-attributes', 'post-formats'),
+//             'taxonomies' =>'category'
+//         )
+//     );
+// }
+// add_action( 'init', 'create_external' );
+
  ?>
